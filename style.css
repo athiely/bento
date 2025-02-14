@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Courier, monospace;
+}
+
+:root {
+    --background-color: #1d1d1d;
+    --color-black: #0e0e0e;
+    --color-gray: #2d2d2d;
+    --color-grey: #6e6e6e;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    background-color: var(--color-black);
+}
+
+.widget1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 10px;
+    background-color: var(--color-gray);
+    padding: 1rem;
+}
+
+.img-user {
+    background-image: url("https://th.bing.com/th/id/OIP.9fWYg215nNGMoJ2gJPB1-QHaHF?w=204&h=195&c=7&r=0&o=5&pid=1.7");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    border: solid 2px white;
+}
+
+.name-user h1 {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.name-user p {
+    color: var(--color-grey);
+    font-size: 0.8rem;
+}
+
+i {
+    color: white;
+    font-size: 2rem;
+}
+
+.widget2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--color-gray);
+    border-radius: 10px;
+}
+
+.widget2 h1 {
+    color:white;
+    font-size: 1.0rem;
+}
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
