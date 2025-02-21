@@ -12,6 +12,7 @@
     --color-black: #0e0e0e;
     --color-gray: #2d2d2d;
     --color-grey: #6e6e6e;
+    --color-white: #fff;
 }
 
 body {
@@ -34,12 +35,17 @@ body {
 .widget1 {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     gap: 0.8rem;
     border-radius: 10px;
     background-color: var(--color-gray);
     padding: 1rem;
+    transition: 300ms ease-in-out;
+}
+
+.widget1:hover {
+    transform: translateY(-5px);
 }
 
 .img-user {
@@ -66,6 +72,7 @@ body {
 i {
     color: white;
     font-size: 2rem;
+    transition: 300ms;
 }
 
 .widget2 {
@@ -75,10 +82,15 @@ i {
     padding: 1rem;
     background-color: var(--color-gray);
     border-radius: 10px;
+    transition: 300ms ease-in-out;
+}
+
+.widget2:hover {
+    transform: translateY(-5px);
 }
 
 .widget2 h1 {
-    color:white;
+    color: white;
     font-size: 1.0rem;
 }
 
@@ -86,4 +98,73 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.widget3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+    transition: 300ms ease-in-out;
+}
+
+.quadrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-gray);
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+.quadrado:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+
+.quadrado i {
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.widget4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    transition: 300ms ease-in-out;
+}
+
+.widget4:hover {
+    transform: translateY(-5px);
+}
+
+.widget4 i {
+    color: var(--color-black);
+    font-size: 4rem;
+    margin: 5px;
+}
+
+.widget4 h1 {
+    font-size: 1.1rem;
+}
+
+.bxl-html5:hover,
+.bxl-css3:hover,
+.bxl-javascript:hover,
+.bxl-bootstrap:hover,
+.bxl-react:hover,
+.bxl-nodejs:hover,
+.bxl-github:hover,
+.bxl-git:hover,
+.bxl-tiktok:hover,
+.bxl-instagram:hover,
+.bxl-linkedin:hover,
+.bxl-figma:hover {
+    color: rgb(255, 0, 149);
 }
